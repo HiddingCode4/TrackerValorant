@@ -2,6 +2,23 @@
 
 Compagnon VALORANT indépendant, interface française sombre/violette et overlay Alt + W.
 
+Version 0.3 : lobby fictif à cinq coéquipiers, parcours de connexion/consentement simulé et overlay d’équipe. La première page est maintenant **Lobby démo**. La connexion Riot réelle reste à développer.
+
+## Mise à jour depuis la version 0.2
+
+Remplacer uniquement `app.py` pour obtenir les nouvelles pages (aucune dépendance supplémentaire). Le ZIP complet fournit aussi la présentation et les nouveaux tests. Pour lancer : `py -3 app.py` depuis le dossier contenant `analysis.py` et `assets`.
+
+## Démonstration du lobby et du consentement
+
+- **Lobby démo** : cinq coéquipiers fictifs ; les consentements sont simulés. Nova illustre une domination régulière, Echo un historique incomplet (6/10), Lumen une hausse d’ACS, et un profil privé reste sans statistiques.
+- Sélectionner un joueur pour lire les observations ; double-cliquer pour ouvrir son historique lorsque le partage est autorisé.
+- **Connexion démo** : simuler l’identité, puis choisir explicitement le partage. Le profil Oreo devient visible dans le lobby uniquement après activation du partage simulé.
+- Révoquer et déconnecter masque immédiatement ses statistiques dans le lobby et l’overlay. Aucun identifiant ou mot de passe n’est demandé. Les choix se réinitialisent à la fermeture.
+- Alt + W sur le lobby ouvre l’overlay de l’équipe ; depuis Statistiques, il ouvre l’overlay du profil affiché.
+- **PRESENTATION-RIOT.html** : présentation interactive en anglais, ouvrable par double-clic dans un navigateur. Il s’agit d’un compagnon de présentation HTML, pas d’une capture de l’application Windows.
+- **RIOT-APPLICATION.md** : description honnête du prototype, intégrations demandées et limites, à compléter avec le contact et une URL de présentation avant une demande.
+
+
 ## État actuel
 
 - Application de bureau, icône de fenêtre/barre des tâches, overlay flottant déplaçable.
@@ -49,6 +66,6 @@ Les tests couvrent les agrégats, historiques incomplets, données invalides et 
 
 ## Prochaine étape Riot
 
-Voir `DOSSIER-RIOT.md`. La clé de production et le secret RSO devront rester sur un serveur HTTPS, jamais dans ce dépôt ou l'exécutable. L'API officielle documentée n'est pas une source de détection de lobby en direct ; cet accès devra être étudié et validé séparément.
+Voir `RIOT-APPLICATION.md` et `DOSSIER-RIOT.md`. La clé de production et le secret RSO devront rester sur un serveur HTTPS, jamais dans ce dépôt ou l'exécutable. L'API officielle documentée n'est pas une source de détection de lobby en direct ; cet accès devra être étudié et validé séparément.
 
 Hidding n'est ni affilié à Riot Games ni approuvé par Riot Games. VALORANT et Riot Games appartiennent à leurs propriétaires respectifs.

@@ -1,5 +1,7 @@
 # Présentation de Hidding pour une demande d'accès
 
+La version 0.3 ajoute un lobby fictif à cinq coéquipiers, un overlay équipe, un parcours de consentement simulé et une présentation HTML interactive. Voir `RIOT-APPLICATION.md` pour la présentation anglaise actualisée.
+
 ## Objectif
 
 Hidding est un projet de compagnon Windows destiné à devenir accessible à la communauté VALORANT. Il aide les joueurs à comprendre leur historique récent et leur progression. La première version est un prototype local utilisant uniquement des données fictives ou importées manuellement.
